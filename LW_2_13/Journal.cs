@@ -20,7 +20,7 @@ namespace LW_2_13
                 CollectionName = args.Name;
                 EventDescription = args.Description;
                 Obj = args.Obj;
-                currentState = currentState;
+                CurrentCollection = currentState;
             }
 
             public override string ToString()

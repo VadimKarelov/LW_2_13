@@ -23,7 +23,7 @@ namespace LW_2_13
             }
         }
 
-        private Element<T>? _last;
+        protected Element<T>? _last;
         private bool _disposed = false;
 
         public MyStack()
@@ -171,10 +171,8 @@ namespace LW_2_13
                     IEnumerator<T> thisEnum = this.GetEnumerator();
                     IEnumerator<T> otherEnum = otherStack.GetEnumerator();
 
-                    thisEnum.MoveNext();
+                    bool isEnd = !thisEnum.MoveNext();
                     otherEnum.MoveNext();
-
-                    bool isEnd = false;
 
                     while (!isEnd)
                     {
