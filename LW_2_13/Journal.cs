@@ -13,9 +13,9 @@ namespace LW_2_13
             public string CollectionName { get; private set; }
             public string EventDescription { get; private set; }
             public T Obj { get; private set; }
-            public MyStack<T> CurrentCollection { get; private set; }
+            public MyNewStack<T> CurrentCollection { get; private set; }
 
-            public JournalEntry(MyStack<T> currentState, MyStackHandlerEventArgs<T> args)
+            public JournalEntry(MyNewStack<T> currentState, MyStackHandlerEventArgs<T> args)
             {
                 CollectionName = args.Name;
                 EventDescription = args.Description;
@@ -25,13 +25,13 @@ namespace LW_2_13
 
             public override string ToString()
             {
-                return $"{Obj.ToString()}:{EventDescription}:{CollectionName}";
+                return $"{Obj.ToString()} {EventDescription} on {CollectionName}";
             }
         }
 
         private List<JournalEntry<T>> _entries = new List<JournalEntry<T>>();
 
-        public void Add(MyStack<T> currentState, MyStackHandlerEventArgs<T> args)
+        public void Add(MyNewStack<T> currentState, MyStackHandlerEventArgs<T> args)
         {
             _entries.Add(new JournalEntry<T>(currentState, args));
         }
@@ -41,7 +41,7 @@ namespace LW_2_13
             string res = "";
             foreach (var entry in _entries)
             {
-                res += entry.ToString();
+                res += entry.ToString() +'\n';
             }
             return res;
         }
@@ -50,12 +50,12 @@ namespace LW_2_13
 
         public void CollectionCountChanged(object sender, MyStackHandlerEventArgs<T> e)
         {
-            Add(sender as MyStack<T>, e);
+            Add(sender as MyNewStack<T>, e);
         }
 
         public void CollectionReferenceChanged(object sender, MyStackHandlerEventArgs<T> e)
         {
-            Add(sender as MyStack<T>, e);
+            Add(sender as MyNewStack<T>, e);
         }
 
         // END EVENT PART

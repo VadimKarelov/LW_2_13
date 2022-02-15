@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LW_2_13
 {
-    internal class MyNewStack<T> : MyStack<T> where T : IComparable<T>
+    internal class MyNewStack<T> : MyStack<T>
     {
         public string Name { get; set; } = "MyNewCollection";
 
@@ -108,7 +108,7 @@ namespace LW_2_13
             }
             set
             {
-                if (index > 0 && index < this.Count)
+                if (index >= 0 && index < this.Count)
                 {
                     var cur = this._last;
                     for (int i = 0; i < index; i++)
@@ -116,6 +116,7 @@ namespace LW_2_13
                         cur = cur.PreviousElement;
                     }
                     cur.Value = value;
+                    OnCollectionReferenceChanged(this, new MyStackHandlerEventArgs<T>(this.Name, $"set new element in position {index}", value));
                 }
                 else
                 {
@@ -125,7 +126,7 @@ namespace LW_2_13
         }
 
         public void Sort()
-        {            
+        {
             for (int i = 0; i < Count; i++)
             {
                 Element<T> current = this._last;
@@ -136,12 +137,12 @@ namespace LW_2_13
 
                 for (int j = 0; j < Count - 1 - i; j++)
                 {
-                    if (current.Value.CompareTo(current.NextElement.Value) > 0)
+                    if (current.Value is IComparable val && val.CompareTo(current.NextElement.Value) > 0)
                     {
                         Swap(current, current.NextElement);
                     }
                     current = current.NextElement;
-                }                
+                }
             }
         }
 
