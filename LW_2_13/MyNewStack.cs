@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LW_2_13
 {
-    internal class MyNewStack<T> : MyStack<T>
+    public class MyNewStack<T> : MyStack<T>
     {
         public string Name { get; set; } = "MyNewCollection";
 
@@ -49,33 +49,39 @@ namespace LW_2_13
             OnCollectionCountChanged(this, new MyStackHandlerEventArgs<T>(this.Name, "delete", this.Get()));
             base.Remove();
         }
-        
+
         public new bool Remove(int index)
-        {    
-            if (_last != null)
+        {
+            if (_last != null && index >= 0 && index < this.Count)
             {
-                Element<T>? deletedElement = _last;
-                // go to deleting element
-                for (int i = 0; i < index; i++)
+                if (this.Count > 1 && index > 0)
                 {
-                    if (deletedElement != null)
+                    Element<T>? deletedElement = _last;
+                    // go to deleting element
+                    for (int i = 0; i < index; i++)
                     {
-                        deletedElement = deletedElement.PreviousElement;
+                        if (deletedElement != null)
+                        {
+                            deletedElement = deletedElement.PreviousElement;
+                        }
                     }
-                    else
-                    {
-                        return false;
-                    }
+                    // change connections
+                    if (deletedElement.NextElement != null) deletedElement.NextElement.PreviousElement = deletedElement.PreviousElement;
+                    if (deletedElement.PreviousElement != null) deletedElement.PreviousElement.NextElement = deletedElement.NextElement;
+
+                    T? value = deletedElement.Value;
+                    deletedElement.Dispose();
+
+                    OnCollectionCountChanged(this, new MyStackHandlerEventArgs<T>(this.Name, $"delete on position {index}", value));
+                    return true;
                 }
-                // change connections
-                deletedElement.NextElement.PreviousElement = deletedElement.PreviousElement;
-                deletedElement.PreviousElement.NextElement = deletedElement.NextElement;
-
-                T? value = deletedElement.Value;
-                deletedElement.Dispose();
-
-                OnCollectionCountChanged(this, new MyStackHandlerEventArgs<T>(this.Name, $"delete on position {index}", value));
-                return true;
+                else
+                {
+                    T value = this._last.Value;
+                    base.Remove();
+                    OnCollectionCountChanged(this, new MyStackHandlerEventArgs<T>(this.Name, $"delete on position {index}", value));
+                    return true;
+                }
             }
             else
                 return false;
@@ -91,7 +97,7 @@ namespace LW_2_13
         {
             get
             {
-                if (index > 0 && index < this.Count)
+                if (index >= 0 && index < this.Count)
                 {
                     IEnumerator<T> en = this.GetEnumerator();
                     en.MoveNext();
@@ -159,7 +165,7 @@ namespace LW_2_13
         }
     }
 
-    class MyStackHandlerEventArgs<T> : EventArgs
+    public class MyStackHandlerEventArgs<T> : EventArgs
     {
         public string Name { get; set; }
         public string Description { get; set; }

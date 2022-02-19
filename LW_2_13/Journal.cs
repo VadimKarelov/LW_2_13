@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LW_2_13
 {
-    class Journal<T>
+    public class Journal<T>
     {
         class JournalEntry<T>
         {
