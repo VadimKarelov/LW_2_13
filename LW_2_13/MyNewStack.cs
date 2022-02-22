@@ -177,5 +177,10 @@ namespace LW_2_13
             Description = description;
             Obj = obj;
         }
+
+        public override string ToString()
+        {
+            return $"{Name}:{Description}:{Obj.ToString()}";
+        }
     }
 }
