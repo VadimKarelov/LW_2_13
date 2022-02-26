@@ -1,0 +1,202 @@
+TpTrace Verbose: 0 : 20024, 1, 2022/02/26, 18:49:08.941, 5230332930705, datacollector.dll, Version: 17.0.0
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:08.944, 5230332951085, datacollector.dll, DataCollectorMain.Run: Starting data collector run with args: --port,53711,--parentprocessid,9876,--diag,D:\University\2 year\OOP\LW_2_13\LW_2_13Tests\bin\Debug\net6.0\fine-code-coverage\coverage-tool-output\diagnostics.datacollector.22-02-26_18-49-08_82537_5.log,--tracelevel,4
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:08.945, 5230332951910, datacollector.dll, DataCollector: Monitoring parent process with id: '9876'
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:08.952, 5230333024194, datacollector.dll, Trying to connect to server on socket : 127.0.0.1:53711 
+TpTrace Verbose: 0 : 20024, 1, 2022/02/26, 18:49:08.956, 5230333069900, datacollector.dll, SocketCommunicationManager : SetupClientAsync : Attempting to connect to the server.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:08.964, 5230333150456, datacollector.dll, Connected to the server successfully 
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:08.964, 5230333151049, datacollector.dll, Using the buffer size of 16384 bytes
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.053, 5230334032987, datacollector.dll, DataCollector: Start Request Processing.
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.056, 5230334066258, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : Datacollector received message: (DataCollection.BeforeTestRunStart) -> {
+  "SettingsXml": "<RunSettings><RunConfiguration><ResultsDirectory>D:\\University\\2 year\\OOP\\LW_2_13\\LW_2_13Tests\\bin\\Debug\\net6.0\\fine-code-coverage\\coverage-tool-output</ResultsDirectory><TargetPlatform>X64</TargetPlatform><TargetFrameworkVersion>.NETCoreApp,Version=v6.0</TargetFrameworkVersion><DesignMode>False</DesignMode><CollectSourceInformation>False</CollectSourceInformation><TestAdaptersPaths>C:\\Program Files\\dotnet\\sdk\\6.0.102\\Extensions</TestAdaptersPaths></RunConfiguration><LoggerRunSettings><Loggers><Logger friendlyName=\"blame\" enabled=\"True\" /><Logger friendlyName=\"Console\" uri=\"logger://microsoft/TestPlatform/ConsoleLogger/v1\" assemblyQualifiedName=\"Microsoft.VisualStudio.TestPlatform.CommandLine.Internal.ConsoleLogger, vstest.console, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a\" codeBase=\"C:\\Program Files\\dotnet\\sdk\\6.0.102\\vstest.console.dll\" enabled=\"True\" /></Loggers></LoggerRunSettings><DataCollectionRunSettings><DataCollectors><DataCollector friendlyName=\"blame\" enabled=\"True\"><Configuration><ResultsDirectory>D:\\University\\2 year\\OOP\\LW_2_13\\LW_2_13Tests\\bin\\Debug\\net6.0\\fine-code-coverage\\coverage-tool-output</ResultsDirectory></Configuration></DataCollector></DataCollectors></DataCollectionRunSettings></RunSettings>",
+  "Sources": [
+    "D:\\University\\2 year\\OOP\\LW_2_13\\LW_2_13Tests\\bin\\Debug\\net6.0\\fine-code-coverage\\build-output\\LW_2_13Tests.dll"
+  ],
+  "IsTelemetryOptedIn": false
+}
+TpTrace Verbose: 0 : 20024, 1, 2022/02/26, 18:49:09.092, 5230334431339, datacollector.dll, TestPluginCache: Update extensions started. Skip filter = False
+TpTrace Verbose: 0 : 20024, 1, 2022/02/26, 18:49:09.093, 5230334437033, datacollector.dll, TestPluginCache: Using directories for assembly resolution 'C:\Program Files\dotnet\sdk\6.0.102\Extensions'.
+TpTrace Verbose: 0 : 20024, 1, 2022/02/26, 18:49:09.093, 5230334437493, datacollector.dll, TestPluginCache: Updated the available extensions to 'C:\Program Files\dotnet\sdk\6.0.102\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll,C:\Program Files\dotnet\sdk\6.0.102\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll'.
+TpTrace Verbose: 0 : 20024, 1, 2022/02/26, 18:49:09.098, 5230334485225, datacollector.dll, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies ends with: Collector.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.DataCollector.DataCollectorConfig TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.DataCollector
+TpTrace Verbose: 0 : 20024, 1, 2022/02/26, 18:49:09.098, 5230334487129, datacollector.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: C:\Program Files\dotnet\sdk\6.0.102\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\6.0.102\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+TpTrace Verbose: 0 : 20024, 1, 2022/02/26, 18:49:09.098, 5230334487665, datacollector.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: 
+TpTrace Verbose: 0 : 20024, 1, 2022/02/26, 18:49:09.098, 5230334487899, datacollector.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.099, 5230334492660, datacollector.dll, AssemblyResolver.ctor: Creating AssemblyResolver with searchDirectories C:\Program Files\dotnet\sdk\6.0.102\Extensions,C:\Program Files\dotnet\sdk\6.0.102
+TpTrace Verbose: 0 : 20024, 1, 2022/02/26, 18:49:09.099, 5230334501576, datacollector.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 20024, 1, 2022/02/26, 18:49:09.100, 5230334503050, datacollector.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: C:\Program Files\dotnet\sdk\6.0.102\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\6.0.102\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+TpTrace Verbose: 0 : 20024, 1, 2022/02/26, 18:49:09.100, 5230334503396, datacollector.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: 
+TpTrace Verbose: 0 : 20024, 1, 2022/02/26, 18:49:09.100, 5230334503612, datacollector.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 20024, 1, 2022/02/26, 18:49:09.100, 5230334504025, datacollector.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: C:\Program Files\dotnet\sdk\6.0.102\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\6.0.102\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.100, 5230334504804, datacollector.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\6.0.102\Extensions,C:\Program Files\dotnet\sdk\6.0.102
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.100, 5230334505189, datacollector.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\6.0.102\Extensions,C:\Program Files\dotnet\sdk\6.0.102
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.100, 5230334508141, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Resolving assembly.
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.100, 5230334508661, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Searching in: 'C:\Program Files\dotnet\sdk\6.0.102\Extensions'.
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.100, 5230334511758, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Loading assembly 'C:\Program Files\dotnet\sdk\6.0.102\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll'.
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.101, 5230334515630, datacollector.dll, AssemblyResolver.OnResolve: Resolved assembly: Microsoft.TestPlatform.Extensions.BlameDataCollector, from path: C:\Program Files\dotnet\sdk\6.0.102\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+TpTrace Error: 0 : 20024, 1, 2022/02/26, 18:49:09.104, 5230334546859, datacollector.dll, The type "Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector" defined in "Microsoft.TestPlatform.Extensions.BlameDataCollector.dll" does not have ExtensionUri attribute.
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.105, 5230334558851, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.EventLogCollector: Resolving assembly.
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.105, 5230334559792, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.EventLogCollector: Searching in: 'C:\Program Files\dotnet\sdk\6.0.102\Extensions'.
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.106, 5230334562704, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.EventLogCollector: Loading assembly 'C:\Program Files\dotnet\sdk\6.0.102\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll'.
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.106, 5230334565668, datacollector.dll, AssemblyResolver.OnResolve: Resolved assembly: Microsoft.TestPlatform.Extensions.EventLogCollector, from path: C:\Program Files\dotnet\sdk\6.0.102\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+TpTrace Error: 0 : 20024, 1, 2022/02/26, 18:49:09.107, 5230334576257, datacollector.dll, The type "Microsoft.TestPlatform.Extensions.EventLogCollector.EventLogDataCollector" defined in "Microsoft.TestPlatform.Extensions.EventLogCollector.dll" does not have ExtensionUri attribute.
+TpTrace Verbose: 0 : 20024, 1, 2022/02/26, 18:49:09.107, 5230334578860, datacollector.dll, TestPluginCache: Discovered the extensions using extension path 'C:\Program Files\dotnet\sdk\6.0.102\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll,C:\Program Files\dotnet\sdk\6.0.102\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll'.
+TpTrace Verbose: 0 : 20024, 1, 2022/02/26, 18:49:09.107, 5230334579287, datacollector.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 20024, 1, 2022/02/26, 18:49:09.107, 5230334579514, datacollector.dll, TestPluginCache: Executors are ''.
+TpTrace Verbose: 0 : 20024, 1, 2022/02/26, 18:49:09.107, 5230334579753, datacollector.dll, TestPluginCache: Executors2 are ''.
+TpTrace Verbose: 0 : 20024, 1, 2022/02/26, 18:49:09.107, 5230334579941, datacollector.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 20024, 1, 2022/02/26, 18:49:09.107, 5230334580125, datacollector.dll, TestPluginCache: Loggers are ''.
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.108, 5230334587279, datacollector.dll, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector
+TpTrace Error: 0 : 20024, 1, 2022/02/26, 18:49:09.108, 5230334589260, datacollector.dll, The type "Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector" defined in "Microsoft.TestPlatform.Extensions.BlameDataCollector.dll" does not have ExtensionUri attribute.
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.117, 5230334679959, datacollector.dll, Listening on Endpoint : 127.0.0.1:53714
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.125, 5230334760611, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : DataCollection started.
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.150, 5230335010083, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : Datacollector received message: (DataCollection.TestHostLaunched) -> {
+  "ProcessId": 17276
+}
+TpTrace Information: 0 : 20024, 5, 2022/02/26, 18:49:09.321, 5230336714460, datacollector.dll, Using the buffer size of 16384 bytes
+TpTrace Information: 0 : 20024, 5, 2022/02/26, 18:49:09.321, 5230336715190, datacollector.dll, Accepted Client request and set the flag
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.677, 5230340274580, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.710, 5230340604085, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.710, 5230340607192, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'JournalAddToCollection - 538712fb-ef6c-786b-fe1b-b934d7195643' started.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.748, 5230340989420, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.751, 5230341012843, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.752, 5230341031717, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'JournalAddToCollection - 538712fb-ef6c-786b-fe1b-b934d7195643' completed
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.759, 5230341092641, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.759, 5230341096294, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.759, 5230341097482, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'JournalRemoveFromCollection - 0d3f2b57-edfa-2098-1c34-39752e2916a4' started.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.760, 5230341110094, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.761, 5230341113802, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.761, 5230341115372, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'JournalRemoveFromCollection - 0d3f2b57-edfa-2098-1c34-39752e2916a4' completed
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.761, 5230341121607, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.762, 5230341125199, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.762, 5230341126709, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'JournalRemoveByIndexFromCollection - e04b45cd-9f83-8b68-7b79-799b294a1847' started.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.763, 5230341139959, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.764, 5230341143346, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.764, 5230341144507, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'JournalRemoveByIndexFromCollection - e04b45cd-9f83-8b68-7b79-799b294a1847' completed
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.764, 5230341149535, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.765, 5230341152261, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.765, 5230341153245, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'JournalChangeElement - d13e105f-1d35-60e6-f62c-6aebc9296021' started.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.766, 5230341168426, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.766, 5230341171458, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.767, 5230341172519, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'JournalChangeElement - d13e105f-1d35-60e6-f62c-6aebc9296021' completed
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.767, 5230341177385, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.767, 5230341180124, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.767, 5230341181080, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackPushMany - f63bf18e-3bde-99bf-5e30-a84018fe8987' started.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.769, 5230341197028, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.769, 5230341201368, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.770, 5230341202824, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackPushMany - f63bf18e-3bde-99bf-5e30-a84018fe8987' completed
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.770, 5230341208469, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.770, 5230341211309, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.771, 5230341212240, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackRemoveEmpty - df2c6c38-7210-1230-0228-978032d8381d' started.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.771, 5230341221537, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.772, 5230341224373, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.772, 5230341225399, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackRemoveEmpty - df2c6c38-7210-1230-0228-978032d8381d' completed
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.772, 5230341230294, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.773, 5230341233010, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.773, 5230341233886, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackRemoveCorrect - 8e8f73a8-f90c-034e-7e12-cdb4a5d5e34c' started.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.774, 5230341241959, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.774, 5230341245995, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.774, 5230341247447, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackRemoveCorrect - 8e8f73a8-f90c-034e-7e12-cdb4a5d5e34c' completed
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.775, 5230341253822, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.775, 5230341258142, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.775, 5230341259829, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackRemoveUpperBound - 3b2cebbb-e936-6279-32f5-302da5ec273b' started.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.776, 5230341269061, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.777, 5230341273080, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.777, 5230341274561, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackRemoveUpperBound - 3b2cebbb-e936-6279-32f5-302da5ec273b' completed
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.778, 5230341281926, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.778, 5230341287585, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.778, 5230341289460, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackRemoveLowerBound - 3cda4760-aa8c-a46b-de39-374c2e94e6f1' started.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.779, 5230341298176, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.779, 5230341301753, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.780, 5230341302915, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackRemoveLowerBound - 3cda4760-aa8c-a46b-de39-374c2e94e6f1' completed
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.804, 5230341545624, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.804, 5230341549438, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.804, 5230341550610, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackRemoveMoreIndex - 1a7c0953-d73a-8e18-a56d-0b6636348003' started.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.805, 5230341560535, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.806, 5230341564056, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.806, 5230341565194, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackRemoveMoreIndex - 1a7c0953-d73a-8e18-a56d-0b6636348003' completed
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.806, 5230341570782, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.807, 5230341573794, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.807, 5230341574730, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackRemoveLessIndex - 02414fd5-3d60-6003-41b5-241d8e8673fb' started.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.808, 5230341582792, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.808, 5230341586810, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.808, 5230341588169, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackRemoveLessIndex - 02414fd5-3d60-6003-41b5-241d8e8673fb' completed
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.809, 5230341594801, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.809, 5230341598406, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.809, 5230341599539, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackIndexatorGetMiddle - 606669de-3e1c-cc57-eb9b-060f9ecfb446' started.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.811, 5230341617617, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.811, 5230341621364, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.812, 5230341622609, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackIndexatorGetMiddle - 606669de-3e1c-cc57-eb9b-060f9ecfb446' completed
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.812, 5230341628957, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.813, 5230341632386, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.813, 5230341633415, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackIndexatorGetFirst - e8b053ac-2ba5-c33e-f187-adb0cee428c5' started.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.814, 5230341641955, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.814, 5230341645480, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.814, 5230341646699, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackIndexatorGetFirst - e8b053ac-2ba5-c33e-f187-adb0cee428c5' completed
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.818, 5230341689724, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.819, 5230341693681, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.819, 5230341694786, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackIndexatorGetLast - 9e3ebb83-025c-ff12-545b-6eb043180ccf' started.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.820, 5230341703047, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.820, 5230341706385, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.820, 5230341707575, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackIndexatorGetLast - 9e3ebb83-025c-ff12-545b-6eb043180ccf' completed
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.821, 5230341713490, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.821, 5230341716933, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.821, 5230341718299, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackIndexatorGetLessIndex - 28c9f226-bb4a-53dd-acf3-a8bb63dc45b8' started.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.823, 5230341734340, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.823, 5230341738155, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.823, 5230341739360, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackIndexatorGetLessIndex - 28c9f226-bb4a-53dd-acf3-a8bb63dc45b8' completed
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.824, 5230341745168, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.824, 5230341748286, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.824, 5230341749249, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackIndexatorGetMoreIndex - 5ea8fe87-c52c-df4b-51fa-6dd17682a53a' started.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.825, 5230341759006, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.826, 5230341762581, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.826, 5230341763781, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackIndexatorGetMoreIndex - 5ea8fe87-c52c-df4b-51fa-6dd17682a53a' completed
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.826, 5230341770746, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.827, 5230341774522, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.827, 5230341775743, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackIndexatorSetMiddle - 0fcc74b5-0be7-f134-c5c4-3ffb572d7010' started.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.828, 5230341786782, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.828, 5230341790337, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.828, 5230341791528, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackIndexatorSetMiddle - 0fcc74b5-0be7-f134-c5c4-3ffb572d7010' completed
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.829, 5230341797471, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.829, 5230341800719, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.829, 5230341801755, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackIndexatorSetFirst - 3b482008-0a12-81fc-628d-0d734c76a5e1' started.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.830, 5230341810447, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.831, 5230341814500, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.831, 5230341815984, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackIndexatorSetFirst - 3b482008-0a12-81fc-628d-0d734c76a5e1' completed
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.833, 5230341833617, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.833, 5230341837382, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.833, 5230341838475, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackIndexatorSetLast - ed24bdc1-8db7-3e14-670a-619927a43cfc' started.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.834, 5230341846860, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.834, 5230341850608, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.835, 5230341851977, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackIndexatorSetLast - ed24bdc1-8db7-3e14-670a-619927a43cfc' completed
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.835, 5230341858168, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.835, 5230341861604, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.836, 5230341862571, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackIndexatorSetLessIndex - 245fe8f9-3274-1944-ca08-57280650a602' started.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.837, 5230341872151, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.837, 5230341875646, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.837, 5230341876894, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackIndexatorSetLessIndex - 245fe8f9-3274-1944-ca08-57280650a602' completed
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.838, 5230341883044, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.838, 5230341886508, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.838, 5230341887731, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackIndexatorSetMoreIndex - ea267fe7-b23e-8d27-2223-4c5345f534db' started.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.839, 5230341897840, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.839, 5230341901617, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.840, 5230341902846, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackIndexatorSetMoreIndex - ea267fe7-b23e-8d27-2223-4c5345f534db' completed
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.840, 5230341908619, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.841, 5230341911915, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.841, 5230341912956, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackDispose - 16ceea0f-962d-c5c5-9244-4ace5e05dd1a' started.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.842, 5230341923608, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.842, 5230341926947, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.842, 5230341928063, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MyNewStackDispose - 16ceea0f-962d-c5c5-9244-4ace5e05dd1a' completed
+TpTrace Information: 0 : 20024, 8, 2022/02/26, 18:49:09.846, 5230341965853, datacollector.dll, DataCollectionTestCaseEventHandler: Test session ended
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.875, 5230342252520, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : Datacollector received message: (DataCollection.AfterTestRunEnd) -> false
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.875, 5230342256701, datacollector.dll, Blame Collector : Session End
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.875, 5230342257168, datacollector.dll, BlameCollector.CollectDumpAndAbortTesthost: Custom path to dump directory was provided via VSTEST_DUMP_PATH. Skipping attachment upload, the caller is responsible for collecting and uploading the dumps themselves.
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.875, 5230342257949, datacollector.dll, DataCollectionManager.CleanupPlugins: CleanupPlugins called
+TpTrace Verbose: 0 : 20024, 1, 2022/02/26, 18:49:09.875, 5230342258356, datacollector.dll, DataCollectionManager.CleanupPlugins: Cleaning up 1 plugins
+TpTrace Verbose: 0 : 20024, 1, 2022/02/26, 18:49:09.875, 5230342259088, datacollector.dll, dataCollectorInfo.DisposeDataCollector: calling Dispose() on Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.875, 5230342259564, datacollector.dll, DataCollectionManager.CleanupPlugins: CleanupPlugins finished
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.877, 5230342277026, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : Session End message received from server. Closing the connection.
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.877, 5230342278634, datacollector.dll, Closing the connection !
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.877, 5230342278975, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : DataCollection completed
+TpTrace Information: 0 : 20024, 1, 2022/02/26, 18:49:09.877, 5230342279198, datacollector.dll, Program.Main: exiting datacollector process.

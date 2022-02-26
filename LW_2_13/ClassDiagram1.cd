@@ -19,6 +19,9 @@
   </Class>
   <Class Name="LW_2_13.MyNewStack&lt;T&gt;">
     <Position X="3.25" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
     <NestedTypes>
       <Delegate Name="LW_2_13.MyNewStack&lt;T&gt;.MyStackHandler" Collapsed="true">
         <TypeIdentifier>
@@ -34,7 +37,7 @@
   <Class Name="LW_2_13.MyStackHandlerEventArgs&lt;T&gt;">
     <Position X="0.5" Y="5.25" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAgAAAAACAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAgAAAEACAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MyNewStack.cs</FileName>
     </TypeIdentifier>
   </Class>

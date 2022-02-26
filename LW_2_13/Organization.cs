@@ -26,7 +26,8 @@ namespace LW_2_13
             string[] cities = { "Magadan", "Arhangelsk", "Sochi", "Moscow", "Omsk" };
             Name = names[rn.Next(0, names.Length)];
             City = cities[rn.Next(0, cities.Length)];
-            AverageSalary = rn.Next(0, 1000) + rn.NextDouble();
+            //AverageSalary = rn.Next(0, 1000) + rn.NextDouble();
+            AverageSalary = rn.Next(0, 10000);
         }
 
         public virtual string Print()

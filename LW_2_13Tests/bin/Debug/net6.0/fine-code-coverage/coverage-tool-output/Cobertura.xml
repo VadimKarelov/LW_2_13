@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.6349614395886889" branch-rate="0.5217391304347826" lines-covered="494" lines-valid="778" branches-covered="72" branches-valid="138" complexity="224" version="0" timestamp="1645303536">
+<coverage line-rate="0.6325224071702945" branch-rate="0.5217391304347826" lines-covered="494" lines-valid="781" branches-covered="72" branches-valid="138" complexity="225" version="0" timestamp="1645901351">
   <sources>
     <source>D:\University\2 year\OOP\LW_2_13\</source>
     <source>C:\</source>
   </sources>
   <packages>
-    <package name="LW_2_13" line-rate="0.5017605633802817" branch-rate="0.5217391304347826" complexity="200">
+    <package name="LW_2_13" line-rate="0.4991243432574431" branch-rate="0.5217391304347826" complexity="201">
       <classes>
         <class name="LW_2_13.Element`1" filename="D:\University\2 year\OOP\LW_2_13\LW_2_13\MyStack.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
@@ -1226,7 +1226,7 @@
             <line number="207" hits="1" branch="false" />
           </lines>
         </class>
-        <class name="LW_2_13.MyStackHandlerEventArgs`1" filename="D:\University\2 year\OOP\LW_2_13\LW_2_13\MyNewStack.cs" line-rate="1" branch-rate="1" complexity="4">
+        <class name="LW_2_13.MyStackHandlerEventArgs`1" filename="D:\University\2 year\OOP\LW_2_13\LW_2_13\MyNewStack.cs" line-rate="0.75" branch-rate="1" complexity="5">
           <methods>
             <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -1241,6 +1241,13 @@
             <method name="get_Obj" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
                 <line number="172" hits="60" branch="false" />
+              </lines>
+            </method>
+            <method name="ToString" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="182" hits="0" branch="false" />
+                <line number="183" hits="0" branch="false" />
+                <line number="184" hits="0" branch="false" />
               </lines>
             </method>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
@@ -1264,6 +1271,9 @@
             <line number="177" hits="55" branch="false" />
             <line number="178" hits="55" branch="false" />
             <line number="179" hits="55" branch="false" />
+            <line number="182" hits="0" branch="false" />
+            <line number="183" hits="0" branch="false" />
+            <line number="184" hits="0" branch="false" />
           </lines>
         </class>
         <class name="LW_2_13.Organization" filename="D:\University\2 year\OOP\LW_2_13\LW_2_13\Organization.cs" line-rate="0.6727272727272727" branch-rate="0.5833333333333334" complexity="20">
@@ -1285,60 +1295,60 @@
             </method>
             <method name="Print" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="33" hits="0" branch="false" />
                 <line number="34" hits="0" branch="false" />
                 <line number="35" hits="0" branch="false" />
                 <line number="36" hits="0" branch="false" />
                 <line number="37" hits="0" branch="false" />
                 <line number="38" hits="0" branch="false" />
                 <line number="39" hits="0" branch="false" />
+                <line number="40" hits="0" branch="false" />
               </lines>
             </method>
             <method name="ToString" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="42" hits="5" branch="false" />
                 <line number="43" hits="5" branch="false" />
                 <line number="44" hits="5" branch="false" />
+                <line number="45" hits="5" branch="false" />
               </lines>
             </method>
             <method name="CompareTo" signature="(...)" line-rate="0.6470588235294118" branch-rate="0.6666666666666666" complexity="6">
               <lines>
-                <line number="47" hits="1" branch="false" />
                 <line number="48" hits="1" branch="false" />
                 <line number="49" hits="1" branch="false" />
-                <line number="50" hits="1" branch="true" condition-coverage="100% (2/2)" />
-                <line number="51" hits="1" branch="false" />
+                <line number="50" hits="1" branch="false" />
+                <line number="51" hits="1" branch="true" condition-coverage="100% (2/2)" />
                 <line number="52" hits="1" branch="false" />
-                <line number="53" hits="1" branch="true" condition-coverage="50% (1/2)" />
-                <line number="54" hits="0" branch="false" />
+                <line number="53" hits="1" branch="false" />
+                <line number="54" hits="1" branch="true" condition-coverage="50% (1/2)" />
                 <line number="55" hits="0" branch="false" />
                 <line number="56" hits="0" branch="false" />
-                <line number="57" hits="1" branch="true" condition-coverage="50% (1/2)" />
-                <line number="58" hits="0" branch="false" />
+                <line number="57" hits="0" branch="false" />
+                <line number="58" hits="1" branch="true" condition-coverage="50% (1/2)" />
                 <line number="59" hits="0" branch="false" />
                 <line number="60" hits="0" branch="false" />
-                <line number="61" hits="1" branch="false" />
+                <line number="61" hits="0" branch="false" />
                 <line number="62" hits="1" branch="false" />
                 <line number="63" hits="1" branch="false" />
+                <line number="64" hits="1" branch="false" />
               </lines>
             </method>
             <method name="Clone" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="66" hits="0" branch="false" />
                 <line number="67" hits="0" branch="false" />
                 <line number="68" hits="0" branch="false" />
                 <line number="69" hits="0" branch="false" />
                 <line number="70" hits="0" branch="false" />
+                <line number="71" hits="0" branch="false" />
               </lines>
             </method>
             <method name="Equals" signature="(...)" line-rate="1" branch-rate="0.5" complexity="6">
               <lines>
-                <line number="73" hits="3" branch="false" />
                 <line number="74" hits="3" branch="false" />
-                <line number="76" hits="3" branch="true" condition-coverage="50% (1/2)" />
-                <line number="78" hits="3" branch="true" condition-coverage="50% (2/4)" />
-                <line number="79" hits="3" branch="false" />
+                <line number="75" hits="3" branch="false" />
+                <line number="77" hits="3" branch="true" condition-coverage="50% (1/2)" />
+                <line number="79" hits="3" branch="true" condition-coverage="50% (2/4)" />
                 <line number="80" hits="3" branch="false" />
+                <line number="81" hits="3" branch="false" />
               </lines>
             </method>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
@@ -1359,8 +1369,8 @@
                 <line number="26" hits="19" branch="false" />
                 <line number="27" hits="19" branch="false" />
                 <line number="28" hits="19" branch="false" />
-                <line number="29" hits="19" branch="false" />
                 <line number="30" hits="19" branch="false" />
+                <line number="31" hits="19" branch="false" />
               </lines>
             </method>
           </methods>
@@ -1380,46 +1390,46 @@
             <line number="26" hits="19" branch="false" />
             <line number="27" hits="19" branch="false" />
             <line number="28" hits="19" branch="false" />
-            <line number="29" hits="19" branch="false" />
             <line number="30" hits="19" branch="false" />
-            <line number="33" hits="0" branch="false" />
+            <line number="31" hits="19" branch="false" />
             <line number="34" hits="0" branch="false" />
             <line number="35" hits="0" branch="false" />
             <line number="36" hits="0" branch="false" />
             <line number="37" hits="0" branch="false" />
             <line number="38" hits="0" branch="false" />
             <line number="39" hits="0" branch="false" />
-            <line number="42" hits="5" branch="false" />
+            <line number="40" hits="0" branch="false" />
             <line number="43" hits="5" branch="false" />
             <line number="44" hits="5" branch="false" />
-            <line number="47" hits="1" branch="false" />
+            <line number="45" hits="5" branch="false" />
             <line number="48" hits="1" branch="false" />
             <line number="49" hits="1" branch="false" />
-            <line number="50" hits="1" branch="true" condition-coverage="100% (2/2)" />
-            <line number="51" hits="1" branch="false" />
+            <line number="50" hits="1" branch="false" />
+            <line number="51" hits="1" branch="true" condition-coverage="100% (2/2)" />
             <line number="52" hits="1" branch="false" />
-            <line number="53" hits="1" branch="true" condition-coverage="50% (1/2)" />
-            <line number="54" hits="0" branch="false" />
+            <line number="53" hits="1" branch="false" />
+            <line number="54" hits="1" branch="true" condition-coverage="50% (1/2)" />
             <line number="55" hits="0" branch="false" />
             <line number="56" hits="0" branch="false" />
-            <line number="57" hits="1" branch="true" condition-coverage="50% (1/2)" />
-            <line number="58" hits="0" branch="false" />
+            <line number="57" hits="0" branch="false" />
+            <line number="58" hits="1" branch="true" condition-coverage="50% (1/2)" />
             <line number="59" hits="0" branch="false" />
             <line number="60" hits="0" branch="false" />
-            <line number="61" hits="1" branch="false" />
+            <line number="61" hits="0" branch="false" />
             <line number="62" hits="1" branch="false" />
             <line number="63" hits="1" branch="false" />
-            <line number="66" hits="0" branch="false" />
+            <line number="64" hits="1" branch="false" />
             <line number="67" hits="0" branch="false" />
             <line number="68" hits="0" branch="false" />
             <line number="69" hits="0" branch="false" />
             <line number="70" hits="0" branch="false" />
-            <line number="73" hits="3" branch="false" />
+            <line number="71" hits="0" branch="false" />
             <line number="74" hits="3" branch="false" />
-            <line number="76" hits="3" branch="true" condition-coverage="50% (1/2)" />
-            <line number="78" hits="3" branch="true" condition-coverage="50% (2/4)" />
-            <line number="79" hits="3" branch="false" />
+            <line number="75" hits="3" branch="false" />
+            <line number="77" hits="3" branch="true" condition-coverage="50% (1/2)" />
+            <line number="79" hits="3" branch="true" condition-coverage="50% (2/4)" />
             <line number="80" hits="3" branch="false" />
+            <line number="81" hits="3" branch="false" />
           </lines>
         </class>
         <class name="LW_2_13.Program" filename="D:\University\2 year\OOP\LW_2_13\LW_2_13\Program.cs" line-rate="0" branch-rate="1" complexity="1">
