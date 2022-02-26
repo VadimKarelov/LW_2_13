@@ -20,7 +20,7 @@ namespace LW_2_13Tests
             st.CollectionCountChanged += j.CollectionCountChanged;
             st.Push(new Organization("A", "A", 100));
 
-            string expected = "A:A:100 push on qwe\n";
+            string expected = "A in A, salary:100 push on qwe\n";
             string actual = j.Show();
 
             Assert.AreEqual(expected, actual);
@@ -36,7 +36,7 @@ namespace LW_2_13Tests
             st.CollectionCountChanged += j.CollectionCountChanged;
             st.Remove();
 
-            string expected = "A:A:100 delete on qwe\n";
+            string expected = "A in A, salary:100 delete on qwe\n";
             string actual = j.Show();
 
             Assert.AreEqual(expected, actual);
@@ -52,7 +52,7 @@ namespace LW_2_13Tests
             st.CollectionCountChanged += j.CollectionCountChanged;
             st.Remove(0);
 
-            string expected = "A:A:100 delete on position 0 on qwe\n";
+            string expected = "A in A, salary:100 delete on position 0 on qwe\n";
             string actual = j.Show();
 
             Assert.AreEqual(expected, actual);
@@ -70,7 +70,7 @@ namespace LW_2_13Tests
 
             st.Sort();
 
-            string expected = "B:B:100 swap 1 on qwe\nA:A:100 swap 2 on qwe\n";
+            string expected = "B in B, salary:100 swap 1 on qwe\nA in A, salary:100 swap 2 on qwe\n";
             string actual = j.Show();
 
             Assert.AreEqual(expected, actual);
