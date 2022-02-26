@@ -34,6 +34,11 @@ namespace LW_2_13
             if (HeadOrganization != null) res += $"Head organisation: {HeadOrganization.Name}\n";
             return res;
         }
+        public override string ToString()
+        {
+            return $"Factory {base.ToString()}";
+        }
+
 
         public new int CompareTo(object obj)
         {

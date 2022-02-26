@@ -29,6 +29,11 @@ namespace LW_2_13
             return res;
         }
 
+        public override string ToString()
+        {
+            return $"Ship construction {base.ToString()}; ships:{ShipConstructed}";
+        }
+
         public new int CompareTo(object obj)
         {
             ShipConstructingCompany org = obj as ShipConstructingCompany;

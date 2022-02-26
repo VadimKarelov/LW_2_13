@@ -30,7 +30,7 @@ namespace LW_2_13
 
         public override string ToString()
         {
-            return $"{base.ToString()}:{NumberOfBooks}";
+            return $"Libary {base.ToString()}; books:{NumberOfBooks}";
         }
 
         public new int CompareTo(object obj)

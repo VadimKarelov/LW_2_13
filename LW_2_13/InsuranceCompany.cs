@@ -28,6 +28,11 @@ namespace LW_2_13
             res += $"Number of clients: {NumberOfClients}\n";
             return res;
         }
+        public override string ToString()
+        {
+            return $"Insurance {base.ToString()}; clients:{NumberOfClients}";
+        }
+
 
         public new int CompareTo(object obj)
         {
